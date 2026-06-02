@@ -1,0 +1,8 @@
+[Theme]
+Name=Nula
+Description=Default login theme for Nula Linux
+Author=l7p3x
+Version=1.0
+MainScript=Main.qml
+ConfigFile=theme.conf
+API=2.0
