@@ -1,11 +1,3 @@
-# Nula
-
-A minimalist SDDM theme focused on elegance, fluid navigation, and a distraction-free login experience.
-
-<p align="center">
-  <img src="preview.png" width="900">
-</p>
-
 <h1 align="center">Nula</h1>
 
 <p align="center">
@@ -61,11 +53,13 @@ Restart SDDM or reboot the system.
 
 ```text
 Nula-SDDM/
-├── Main.qml
-├── components/
 ├── assets/
+├── components/
+├── Main.qml
+├── README.md
 ├── metadata.desktop
-└── README.md
+├── preview.png
+└── theme.conf
 ```
 
 ## Customization
