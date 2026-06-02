@@ -81,7 +81,6 @@ Most visual changes can be made directly through the QML files.
 ## Compatibility
 
 * SDDM
-* Plasma (X11 / Wayland)
 * Qt 5
 * Qt 6
 
