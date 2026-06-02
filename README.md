@@ -1,57 +1,91 @@
-```markdown
-# Nula SDDM Theme
+# Nula
+
+A minimalist SDDM theme focused on elegance, fluid navigation, and a distraction-free login experience.
 
 <p align="center">
-  <img src="preview.png" alt="Nula SDDM Preview" width="800">
+  <img src="preview.png" alt="Nula Preview" width="900">
 </p>
 
-A sleek, minimalist login theme for Linux. Built for the **Nula Linux** ecosystem, it features a fluid user avatar carousel with smooth transitions and optimized session controls.
+## Overview
 
-## 🛠️ Installation
+Nula is a modern SDDM theme featuring a smooth user carousel, subtle animations, and a clean dark interface designed to stay out of the way while still looking distinctive.
 
-### 1. Clone the repository
+The theme takes inspiration from minimalist design principles, emphasizing clarity, motion, and simplicity.
+
+## Features
+
+* Smooth user carousel
+* Dark minimalist interface
+* Large branded background element
+* Session selector integration
+* Power controls
+* Lightweight QML implementation
+* Keyboard-friendly navigation
+
+## Installation
+
+Clone the repository:
+
 ```bash
-git clone [https://github.com/l7p3x/Nula-SDDM.git](https://github.com/l7p3x/Nula-SDDM.git)
-cd Nula-SDDM  
-
+git clone https://github.com/l7p3x/Nula-SDDM.git
 ```
 
-### 2. Install the theme
-
-Move the internal `Nula` directory to your system's SDDM themes folder:
+Install the theme:
 
 ```bash
-sudo cp -r Nula /usr/share/sddm/themes/
-
+sudo cp -r Nula-SDDM /usr/share/sddm/themes/nula
 ```
 
-### 3. Set as default
-
-Edit your SDDM configuration file (usually at `/etc/sddm.conf`) and set `Current` to `Nula` under the `[Theme]` section:
+Configure SDDM:
 
 ```ini
 [Theme]
-Current=Nula
-
+Current=nula
 ```
 
-## 📄 License
+Restart SDDM or reboot the system.
 
-This project is licensed under the MIT License.
+## Screenshots
 
+### Login Screen
+
+![Login Screen](preview.png)
+
+## Directory Structure
+
+```text
+Nula-SDDM/
+├── Main.qml
+├── components/
+├── assets/
+├── metadata.desktop
+└── README.md
 ```
 
----
+## Customization
 
-### 🛠️ Passo a Passo para colocar a imagem no ar:
+You can customize:
 
-1. **Tire o Print:** Abra o seu tema em modo de teste com o comando `sddm-greeter --test-mode --theme /usr/share/sddm/themes/Nula` e tire uma captura de tela bem limpa.
-2. **Nomeie a Imagem:** Salve a imagem com o nome de `preview.png`.
-3. **Organize na Pasta:** Crie uma pasta chamada `assets` na raiz do seu repositório local e jogue a imagem `preview.png` lá dentro.
-4. **Envie para o GitHub:** Use os comandos Git para subir as mudanças:
-   ```bash
-   git add .
-   git commit -m "Add theme preview image to readme"
-   git push
+* Colors
+* Fonts
+* Background elements
+* Animations
+* User carousel behavior
+* Session selector appearance
 
-```
+Most visual changes can be made directly through the QML files.
+
+## Compatibility
+
+* SDDM
+* Plasma (X11 / Wayland)
+* Qt 5
+* Qt 6
+
+## License
+
+MIT License
+
+## Author
+
+Created by **l7p3x**
