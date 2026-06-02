@@ -19,8 +19,6 @@ The theme takes inspiration from minimalist design principles, emphasizing clari
 * Large branded background element
 * Session selector integration
 * Power controls
-* Lightweight QML implementation
-* Keyboard-friendly navigation
 
 ## Installation
 
@@ -67,22 +65,26 @@ Nula-SDDM/
 
 ## Customization
 
-You can customize:
+The theme exposes only a few basic configuration options through the `theme.conf` file, including:
 
-* Colors
-* Fonts
-* Background elements
-* Animations
-* User carousel behavior
-* Session selector appearance
+- Default avatar
+- Avatar size
+- Avatar border color
+- Avatar border width
 
-Most visual changes can be made directly through the QML files.
+More advanced customizations, such as:
 
-## Compatibility
+- Animations
+- Interface layout
+- User carousel behavior
+- Session controls appearance
+- Element positioning
 
-* SDDM
-* Qt 5
-* Qt 6
+require editing the theme's QML files directly.
+
+## Requirements
+
+- SDDM
 
 ## License
 
