@@ -61,6 +61,7 @@ Nula-SDDM/
 ├── README.md
 ├── metadata.desktop
 ├── preview.png
+├── preview2.gif
 └── theme.conf
 ```
 
