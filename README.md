@@ -1,8 +1,10 @@
-<h1 align="center">Nula</h1>
+# Nula
 
 <p align="center">
-  Minimalist SDDM theme with smooth carousel animations.
+  <img src="preview.png" alt="Nula Preview">
 </p>
+
+A minimalist SDDM theme featuring a smooth user carousel and modern dark interface.
 
 ## Overview
 
@@ -47,7 +49,7 @@ Restart SDDM or reboot the system.
 
 ### Login Screen
 
-![Login Screen](preview.png)
+![Login Screen](preview2.png)
 
 ## Directory Structure
 
