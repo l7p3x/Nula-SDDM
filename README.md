@@ -49,7 +49,7 @@ Restart SDDM or reboot the system.
 
 ### Login Screen
 
-![Login Screen](preview2.png)
+![Login Screen](preview2.gif)
 
 ## Directory Structure
 
