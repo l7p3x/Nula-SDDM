@@ -3,7 +3,13 @@
 A minimalist SDDM theme focused on elegance, fluid navigation, and a distraction-free login experience.
 
 <p align="center">
-  <img src="preview.png" alt="Nula Preview" width="900">
+  <img src="preview.png" width="900">
+</p>
+
+<h1 align="center">Nula</h1>
+
+<p align="center">
+  Minimalist SDDM theme with smooth carousel animations.
 </p>
 
 ## Overview
