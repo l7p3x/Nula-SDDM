@@ -22,12 +22,27 @@ Rectangle {
 
     Connections {
         target: sddm
+
         function onLoginFailed() {
-            errorMessage.text = "Login failed. Please try again."
+            errorMessage.opacity = 0
+            errorMessage.text = "Incorrect password. Try again."
             passwordField.clearAndFocus()
             passwordField.shake()
+            errorRevealTimer.restart()
         }
-        function onLoginSucceeded() { errorMessage.text = "" }
+
+        function onLoginSucceeded() {
+            errorRevealTimer.stop()
+            errorMessage.opacity = 0
+            errorMessage.text = ""
+        }
+    }
+
+    Timer {
+        id: errorRevealTimer
+        interval: 300
+        repeat: false
+        onTriggered: errorMessage.opacity = 1
     }
 
     SystemButtons {
@@ -57,8 +72,11 @@ Rectangle {
             id: passwordField
             anchors.horizontalCenter: parent.horizontalCenter
             onLoginRequested: function(password) {
-
-            sddm.login(root.currentUserName, password, sessionSelector.selectedIndex)
+                sddm.login(root.currentUserName, password, sessionSelector.selectedIndex)
+            }
+            onTypingStarted: {
+                errorRevealTimer.stop()
+                errorMessage.opacity = 0
             }
         }
 
@@ -70,11 +88,12 @@ Rectangle {
         Text {
             id: errorMessage
             text: ""
+            opacity: 0
             color: "#c8922a"
             font.pixelSize: 12
             font.weight: Font.Medium
             anchors.horizontalCenter: parent.horizontalCenter
-            Behavior on opacity { NumberAnimation { duration: 150 } }
+            Behavior on opacity { NumberAnimation { duration: 200 } }
         }
     }
 
@@ -86,7 +105,6 @@ Rectangle {
         z: 10
     }
 
-    // ── Fecha menu ao clicar fora ──────────────────────────
     MouseArea {
         anchors.fill: parent
         z: 0
@@ -95,6 +113,8 @@ Rectangle {
     }
 
     onSelectedIndexChanged: {
+        errorRevealTimer.stop()
+        errorMessage.opacity = 0
         errorMessage.text = ""
         passwordField.clearAndFocus()
     }
