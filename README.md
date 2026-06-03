@@ -123,7 +123,7 @@ This project is licensed under the GPL v3 License - see the [LICENSE](LICENSE) f
 
 ## Acknowledgements
 
-Created with ❤️ by **l7p3x**.
+Created with by **l7p3x**.
 
 ### Credits
 
