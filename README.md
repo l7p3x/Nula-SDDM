@@ -56,10 +56,7 @@ Nula-SDDM/
 ├── assets/
 ├── components/
 ├── Main.qml
-├── README.md
 ├── metadata.desktop
-├── preview.png
-├── preview2.gif
 └── theme.conf
 ```
 
@@ -82,13 +79,16 @@ More advanced customizations, such as:
 
 require editing the theme's QML files directly.
 
-## Requirements
+## Dependencies
 
 - SDDM
+- QtQuick
+- QtQuick.Controls
+- Qt5Compat.GraphicalEffects
 
 ## License
 
-MIT License
+MIT License. See the LICENSE file for details.
 
 ## Author
 
