@@ -1,5 +1,5 @@
-import QtQuick 2.15
-import QtGraphicalEffects 1.0
+import QtQuick
+import Qt5Compat.GraphicalEffects
 
 Item {
     id: carousel
@@ -90,7 +90,7 @@ Item {
             }
 
             OpacityMask {
-                anchors.fill: parent
+            	anchors.fill: parent
                 source: avatarImg
                 maskSource: circleMask
             }

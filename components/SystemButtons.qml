@@ -1,5 +1,5 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
+import QtQuick
+import QtQuick.Controls
 
 Row {
     spacing: 10
@@ -7,7 +7,7 @@ Row {
     // System Suspend
     Button {
         display: AbstractButton.IconOnly
-        icon.name: "system-suspend"
+        icon.name: "assets/suspend.svg"
         icon.color: "white"
         flat: true
         onClicked: sddm.suspend()
@@ -20,7 +20,7 @@ Row {
     // System Reboot
     Button {
         display: AbstractButton.IconOnly
-        icon.name: "system-reboot"
+        icon.name: "assets/reboot.svg"
         icon.color: "white"
         flat: true
         onClicked: sddm.reboot()
@@ -33,7 +33,7 @@ Row {
     // System Shutdown
     Button {
         display: AbstractButton.IconOnly
-        icon.name: "system-shutdown"
+        icon.name: "assets/shutdown.svg"
         icon.color: "white"
         flat: true
         onClicked: sddm.powerOff()

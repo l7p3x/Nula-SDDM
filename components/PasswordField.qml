@@ -1,5 +1,5 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
+import QtQuick
+import QtQuick.Controls
 
 Rectangle {
     id: passwordContainer
@@ -39,6 +39,8 @@ Rectangle {
         echoMode: TextInput.Password
         font.pixelSize: 14
         leftPadding: 12
+        palette.text: "#e8e8e8"
+        palette.placeholderText: "#e8e8e8"
 
         background: Rectangle {
             color: "#80000000"

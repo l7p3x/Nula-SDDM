@@ -1,5 +1,5 @@
-import QtQuick 2.15
-import "components/"
+import QtQuick
+import "components"
 
 Rectangle {
     id: root
@@ -10,7 +10,7 @@ Rectangle {
     property int centerSize: parseInt(config.AvatarSize)
     property int sideSize: Math.round(centerSize * 0.58)
     property int gap: 28
-    property string currentUserName: userModel.data(userModel.index(selectedIndex, 0), Qt.DisplayRole) || ""
+    property string currentUserName: userModel.data(userModel.index(selectedIndex, 0), 257) || ""
 
     Component.onCompleted: passwordField.clearAndFocus()
 
@@ -57,8 +57,14 @@ Rectangle {
             id: passwordField
             anchors.horizontalCenter: parent.horizontalCenter
             onLoginRequested: function(password) {
-                sddm.login(root.currentUserName, password, sessionSelector.selectedIndex)
+
+            sddm.login(root.currentUserName, password, sessionSelector.selectedIndex)
             }
+        }
+
+        Item {
+            width: 1
+            height: 12
         }
 
         Text {
