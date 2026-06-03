@@ -6,6 +6,7 @@ Copyright=(C) 2026, l7p3x
 License=MIT
 Version=1.0
 Website=https://github.com/l7p3x/Nula-SDDM
+Screenshot=preview.png
 Type=sddm-theme
 MainScript=Main.qml
 ConfigFile=theme.conf
