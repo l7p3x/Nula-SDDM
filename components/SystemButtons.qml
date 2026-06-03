@@ -7,7 +7,7 @@ Row {
     // System Suspend
     Button {
         display: AbstractButton.IconOnly
-        icon.name: "assets/suspend.svg"
+        icon.source: "../assets/suspend.svg"
         icon.color: "white"
         flat: true
         onClicked: sddm.suspend()
@@ -20,7 +20,7 @@ Row {
     // System Reboot
     Button {
         display: AbstractButton.IconOnly
-        icon.name: "assets/reboot.svg"
+        icon.source: "../assets/reboot.svg"
         icon.color: "white"
         flat: true
         onClicked: sddm.reboot()
@@ -33,7 +33,7 @@ Row {
     // System Shutdown
     Button {
         display: AbstractButton.IconOnly
-        icon.name: "assets/shutdown.svg"
+        icon.source: "../assets/shutdown.svg"
         icon.color: "white"
         flat: true
         onClicked: sddm.powerOff()
