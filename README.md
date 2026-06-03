@@ -121,15 +121,7 @@ Then, change the `Current` theme in `/etc/sddm.conf` back to your previous theme
 
 This project is licensed under the GPL v3 License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
+## Credits
 
-Created with by **l7p3x**.
-
-### Credits
-
-This project uses 3 icons from the **Yet Another Monochrome Icon Set** project:
-
-- **Original Project**: https://bitbucket.org/dirn-typo/yet-another-monochrome-icon-set/src/main/
-- **Original Author**: Dirn
-
-Thank you to Dirn for the beautiful icon set!
+* **Developer:** Created by [l7p3x](https://github.com/l7p3x).
+* **Icons:** Uses 3 icons from the [Yet Another Monochrome Icon Set](https://bitbucket.org/dirn-typo/yet-another-monochrome-icon-set/src/main/) project by **Dirn**.
