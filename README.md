@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="#installation"><img src="https://img.shields.io/badge/SDDM-Theme-blue.svg" alt="SDDM Theme"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL%20v3-green.svg" alt="License: GPL v3"></a>
   <a href="https://github.com/l7p3x/Nula-SDDM/stargazers"><img src="https://img.shields.io/github/stars/l7p3x/Nula-SDDM.svg" alt="GitHub stars"></a>
 </p>
 
@@ -14,7 +14,7 @@
 
 ## Overview
 
-**Nula** is a modern, minimalist SDDM theme designed to stay out of your way while looking distinctive. Taking inspiration from clean design principles, it emphasizes clarity, smooth motion, and simplicity. 
+**Nula** is a modern, minimalist SDDM theme designed to stay out of your way while looking distinctive. Taking inspiration from clean design principles, it emphasizes clarity, smooth motion, and simplicity.
 
 It features a sleek dark interface, a fluid user carousel, and subtle animations that make your login experience both beautiful and functional.
 
@@ -119,8 +119,17 @@ Then, change the `Current` theme in `/etc/sddm.conf` back to your previous theme
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL v3 License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
-Created with by **l7p3x**.
+Created with ❤️ by **l7p3x**.
+
+### Credits
+
+This project uses 3 icons from the **Yet Another Monochrome Icon Set** project:
+
+- **Original Project**: https://bitbucket.org/dirn-typo/yet-another-monochrome-icon-set/src/main/
+- **Original Author**: Dirn
+
+Thank you to Dirn for the beautiful icon set!
