@@ -66,25 +66,33 @@ Item {
             anchors.margins: 2
             model: sessionModel
 
-            delegate: ItemDelegate {
+            delegate: Rectangle {
                 width: ListView.view.width
                 height: 28
-                contentItem: Text {
+                color: itemMouse.containsMouse ? "#15ffffff" : "transparent"
+                radius: 2
+            
+                Text {
+                    anchors.fill: parent
+                    leftPadding: 10
                     text: model.name
                     color: index === sessionRoot.selectedIndex ? "#e8e8e8" : "#555555"
                     font.pixelSize: 11
                     font.capitalization: Font.AllUppercase
                     font.letterSpacing: 1
                     verticalAlignment: Text.AlignVCenter
-                    leftPadding: 10
+                    elide: Text.ElideRight
                 }
-                background: Rectangle {
-                    color: hovered ? "#15ffffff" : "transparent"
-                    radius: 2
-                }
-                onClicked: {
-                    sessionRoot.selectedIndex = index
-                    sessionRoot.menuOpen = false
+            
+                MouseArea {
+                    id: itemMouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: {
+                        sessionRoot.selectedIndex = index
+                        sessionRoot.menuOpen = false
+                    }
                 }
             }
         }
