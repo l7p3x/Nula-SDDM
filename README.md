@@ -98,7 +98,7 @@ Since Nula uses `Qt5Compat.GraphicalEffects`, it requires **Qt6** versions of th
 sudo pacman -S sddm qt6-quickcontrols2 qt5compat
 ```
 
-**Ubuntu/Debian (Plasma 6):**
+**Ubuntu/Debian:**
 ```bash
 sudo apt install sddm qml6-module-qtquick-controls qml6-module-qt5compat-graphicaleffects
 ```
