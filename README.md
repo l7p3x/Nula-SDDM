@@ -95,17 +95,17 @@ Since Nula uses `Qt5Compat.GraphicalEffects`, it requires **Qt6** versions of th
 
 **Arch Linux:**
 ```bash
-sudo pacman -S sddm qt6-quickcontrols2 qt5compat
+sudo pacman -S sddm qt6-quickcontrols2 qt5compat qt6-svg
 ```
 
 **Ubuntu/Debian:**
 ```bash
-sudo apt install sddm qml6-module-qtquick-controls qml6-module-qt5compat-graphicaleffects
+sudo apt install sddm qml6-module-qtquick-controls qml6-module-qt5compat-graphicaleffects qt6-svg-plugins
 ```
 
 **Fedora:**
 ```bash
-sudo dnf install sddm qt6-qtquickcontrols2 qt6-qt5compat
+sudo dnf install sddm qt6-qtquickcontrols2 qt6-qt5compat qt6-qtsvg
 ```
 
 ## Uninstallation
